@@ -23,7 +23,6 @@ SOURCES += \
     remarkinput.cpp \
     staff.cpp \
     staffsform.cpp \
-    testing.cpp \
     utilities.cpp
 
 HEADERS += \
@@ -37,7 +36,6 @@ HEADERS += \
     remarkinput.h \
     staff.h \
     staffsform.h \
-    testing.h \
     utilities.h
 
 FORMS += \
