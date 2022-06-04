@@ -6,7 +6,8 @@ It is a hostel management and complaint system, i.e. it is a software that helps
 Hostel is what becomes home-like for the hostelers, it is like living in a nest where the staffs are supposed to work like the birds keeping their children feel warm and comfy. Hence, the name warm-nest.
 
 ### How to Build
-Install Qt on your system and mariadb/conncpp connector.
+1. Download and Install Qt (if not already) on your system from https://www.qt.io/download-qt-installer?hsCtaTracking=99d9dd4f-5681-48d2-b096-470725510d34%7C074ddad0-fdef-4e53-8aa8-5e8a876d6ab4
+2. Download and Install mariadb/conncpp connector from https://mariadb.com/downloads/connectors/connectors-data-access/cpp-connector/
 Open the project in QtCreator and build the project.
 
 ### Requirements to run the application:
@@ -16,7 +17,7 @@ Open the project in QtCreator and build the project.
 
 "hostelers" :
 | Field             | Type                | Null | Key | Default | Extra |
-+-------------------+---------------------+------+-----+---------+-------+
+|-------------------|---------------------|------|-----|---------|-------|
 | room              | varchar(4)          | NO   |     | NULL    |       |
 | roll              | int(8) unsigned     | NO   | PRI | NULL    |       |
 | name              | varchar(20)         | NO   |     | NULL    |       |
@@ -28,7 +29,7 @@ Open the project in QtCreator and build the project.
 
 "staffs" :
 | Field       | Type                | Null | Key | Default | Extra |
-+-------------+---------------------+------+-----+---------+-------+
+|-------------|---------------------|------|-----|---------|-------|
 | floor_block | varchar(3)          | NO   |     | NULL    |       |
 | staff_id    | int(8) unsigned     | NO   |     | NULL    |       |
 | name        | varchar(20)         | NO   |     | NULL    |       |
@@ -39,7 +40,7 @@ Open the project in QtCreator and build the project.
 
 "complaints" :
 | Field        | Type                | Null | Key | Default | Extra          |
-+--------------+---------------------+------+-----+---------+----------------+
+|--------------|---------------------|------|-----|---------|----------------|
 | complaint_id | bigint(20) unsigned | NO   | PRI | NULL    | auto_increment |
 | date         | date                | NO   |     | NULL    |                |
 | roll         | int(8) unsigned     | NO   |     | NULL    |                |
