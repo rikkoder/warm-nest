@@ -8,7 +8,7 @@ Hostel is what becomes home-like for the hostelers, it is like living in a nest 
 ### How to Build
 1. Download and Install Qt (if not already) on your system from https://www.qt.io/download-qt-installer?hsCtaTracking=99d9dd4f-5681-48d2-b096-470725510d34%7C074ddad0-fdef-4e53-8aa8-5e8a876d6ab4
 2. Download and Install mariadb/conncpp connector from https://mariadb.com/downloads/connectors/connectors-data-access/cpp-connector/
-Open the project in QtCreator and build the project.
+3. Open the project in QtCreator and build the project.
 
 ### Requirements to run the application:
 1. MariaDB or Mysql server running on local host.
