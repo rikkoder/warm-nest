@@ -53,7 +53,7 @@ Hostel is what becomes home-like for the hostelers, it is like living in a nest 
 
 ### Future Features:
 Although the software has basic functionalities, it lacks on some  important features that are currently under development and are to be added in the future release. Some of them are:
--> make hostelers and staffs records updatable (some or all fields?)
--> sort and filter queries on fields.
--> data entry from JSON files.
--> flexibility in table schemas to fullfill different needs of end users, (currently it can be done by changing the source code only, a more user-friendly approach is yet to be added).
+1. make hostelers and staffs records updatable (some or all fields?)
+2. sort and filter queries on fields.
+3. data entry from JSON files.
+4. flexibility in table schemas to fullfill different needs of end users, (currently it can be done by changing the source code only, a more user-friendly approach is yet to be added).
