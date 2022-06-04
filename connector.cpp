@@ -42,7 +42,7 @@ void Connector::initDB() {
 
     stmnt = std::unique_ptr<sql::PreparedStatement> (conn->prepareStatement("CREATE TABLE IF NOT EXISTS staffs ("
                                                                             "floor_block VARCHAR(3) NOT NULL, "
-                                                                            "staff_id INT(8) UNSIGNED NOT NULL, "
+                                                                            "staff_id INT(8) UNSIGNED PRIMARY KEY, "
                                                                             "name VARCHAR(20) NOT NULL, "
                                                                             "designation VARCHAR(15) NOT NULL, "
                                                                             "phone BIGINT UNSIGNED UNIQUE NOT NULL, "
