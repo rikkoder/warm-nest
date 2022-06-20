@@ -3,6 +3,7 @@
 
 #include <QString>
 #include <QMessageBox>
+#include <QRegularExpression>
 
 namespace possible_values {
     enum designation {WARDEN, CARE_TAKER, ELECTRICIAN, GUARD};

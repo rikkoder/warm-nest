@@ -21,12 +21,14 @@ bool invalid_room(QString room) {
 }
 
 bool invalid_roll(QString roll) {
-    if (!QRegExp("\\d+").exactMatch(roll) || roll.length() != 8) return true;
+    QRegularExpression regex(QRegularExpression::anchoredPattern(QLatin1String("\\d+")));
+    if (!regex.match(roll).hasMatch() || roll.length() != 8) return true;
     return false;
 }
 
 bool invalid_name(QString name) {
-    if (!QRegExp("^[A-Za-z\\s]+$").exactMatch(name) || name.length() > 20) return true;
+    QRegularExpression regex(QRegularExpression::anchoredPattern(QLatin1String("^[A-Za-z\\s]+$")));
+    if (!regex.match(name).hasMatch() || name.length() > 20) return true;
     return false;
 }
 
@@ -40,17 +42,20 @@ bool invalid_branch(QString branch) {
 }
 
 bool invalid_phone(QString phone) {
-    if (!QRegExp("\\d+").exactMatch(phone) || phone.length() != 10) return true;
+    QRegularExpression regex(QRegularExpression::anchoredPattern(QLatin1String("\\d+")));
+    if (!regex.match(phone).hasMatch() || phone.length() != 10) return true;
     return false;
 }
 
 bool invalid_email(QString email) {
-    if (!QRegExp("^\\w+@[a-zA-Z_]+\\.[a-zA-Z]{2,3}$").exactMatch(email) || email.length() > 20) return true;
+    QRegularExpression regex(QRegularExpression::anchoredPattern(QLatin1String("^\\w+@[a-zA-Z_]+\\.[a-zA-Z]{2,3}$")));
+    if (!regex.match(email).hasMatch() || email.length() > 20) return true;
     return false;
 }
 
 bool invalid_emergency(QString emergency) {
-    if (!QRegExp("\\d+").exactMatch(emergency) || emergency.length() != 10) return true;
+    QRegularExpression regex(QRegularExpression::anchoredPattern(QLatin1String("\\d+")));
+    if (!regex.match(emergency).hasMatch() || emergency.length() != 10) return true;
     return false;
 }
 
@@ -60,12 +65,14 @@ bool invalid_remark(QString remark) {
 }
 
 bool invalid_floor_block(QString floor_block) {
-    if (QRegExp("^\\d-[A-D]$").exactMatch(floor_block)) return false;
+    QRegularExpression regex(QRegularExpression::anchoredPattern(QLatin1String("^\\d-[A-D]$")));
+    if (regex.match(floor_block).hasMatch()) return false;
     return true;
 }
 
 bool invalid_staff_id(QString staff_id) {
-    if (!QRegExp("\\d+").exactMatch(staff_id) || staff_id.length() != 8) return true;
+    QRegularExpression regex(QRegularExpression::anchoredPattern(QLatin1String("\\d+")));
+    if (!regex.match(staff_id).hasMatch() || staff_id.length() != 8) return true;
     return false;
 }
 
@@ -76,7 +83,8 @@ bool invalid_designation(QString designation) {
 }
 
 bool invalid_complaint_id(QString complaint_id) {
-    if (QRegExp("\\d+").exactMatch(complaint_id)) return false;
+    QRegularExpression regex(QRegularExpression::anchoredPattern(QLatin1String("\\d+")));
+    if (regex.match(complaint_id).hasMatch()) return false;
     return true;
 }
 
