@@ -23,7 +23,6 @@ SOURCES += \
     remarkinput.cpp \
     staff.cpp \
     staffsform.cpp \
-    testing.cpp \
     utilities.cpp
 
 HEADERS += \
@@ -37,7 +36,6 @@ HEADERS += \
     remarkinput.h \
     staff.h \
     staffsform.h \
-    testing.h \
     utilities.h
 
 FORMS += \
@@ -47,6 +45,8 @@ FORMS += \
     mainwindow.ui \
     remarkinput.ui \
     staffsform.ui
+
+LIBS += -lmariadbcpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
